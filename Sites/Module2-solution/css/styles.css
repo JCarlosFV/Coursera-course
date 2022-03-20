@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    background-color: #bfbfbf;
+    border: 1px solid black;
+    height: 200px;
+    margin: 10px 10px;
+    padding: 40px 10px 5px 10px;
+    overflow: hidden;
+}
+
+.row{
+    width: 100%;
+}
+
+.contenedor-1, .contenedor-2, .contenedor-3{
+    position: relative;
+}
+
+.p1, .p2, .p3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 150px;
+    padding: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.p1{
+    background-color: #0CA09F;
+    color: #ffffff;
+}
+
+.p2{
+    background-color: #d7ec19;
+}
+
+.p3{
+    background-color: #a910d8;
+    color: #ffffff;
+}
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3{
+        float: left;
+        width: 33.33%;    
+    }
+
+}
+
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3{
+        float: left;
+    }
+
+    .col-md-1, .col-md-2 {
+        width: 50%;
+    }
+
+    .col-md-3{
+        width: 100%;
+    }
+
+}
+
+/********** Small devices only **********/
+
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3{
+        float: left;
+        width: 100%;
+    }
+}
